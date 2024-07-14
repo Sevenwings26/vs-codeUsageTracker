@@ -6,12 +6,12 @@ import platform
 
 def get_program_name():
     default_program_name = "Code.exe" if platform.system() == "Windows" else "code"
-    # program_name = input(f"Enter the name of the program to track (default: {default_program_name}): ")
+    program_name = input(f"Enter the name of the program to track (default: {default_program_name}): ")
 
-    # return program_name if program_name else default_program_name
+    return program_name if program_name else default_program_name
 
-    program_name = "Code.exe"
-    return program_name
+    # program_name = "Code.exe"
+    # return program_name
 
 def monitor_program_usage(program_name):
     program_start_time = None
