@@ -1,7 +1,8 @@
 import mysql.connector
 
-def save_db():
-        from run_tracker import program_name, start_time, end_time, duration
+def save_db(data):
+        # from run_tracker import program_name, start_time, end_time, duration
+        program_name, start_time, end_time, duration = data
         myBD = mysql.connector.connect(
                 host="localhost",
                 user="root",
